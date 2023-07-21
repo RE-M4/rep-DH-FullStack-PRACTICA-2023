@@ -1,0 +1,33 @@
+body {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+li {
+    font-size: 12px;
+}
+
+#descuento {
+    font-size: 16px;
+}
+
+#precio {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.burguer-menu {
+    background-color: #03264C;
+}
