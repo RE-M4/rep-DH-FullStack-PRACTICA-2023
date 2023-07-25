@@ -1,7 +1,16 @@
 body {
-    background-color: #EAC926;
     font-family: 'Roboto', sans-serif; 
     font-weight: bolder;
+    margin: 0;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+main {
+    background-color: #EAC926;
+    text-align: center;
 }
 
 h1 {
@@ -29,5 +38,30 @@ p {
 }
 
 .burguer-menu {
-    background-color: #03264C;
+    text-align: center;
+    font-size: 24px;
+    width: 28px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #1259C3;
+    color: white;
+  }
+
+footer {
+    text-align: center;
+    background-color: white;
+    padding-top: 20px;
+}
+
+#icono-footer {
+    size: 2em;
+    margin-bottom: 10px;
+    color: #1259C3;
+    font-size: 30px;
+}
+
+#copy {
+    text-align: left;
+    color: #666;
 }
