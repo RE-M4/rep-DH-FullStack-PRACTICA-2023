@@ -1,39 +1,166 @@
+/*  
+    PALETA DE COLORES
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+*/
+
+/** ESTILOS GLOBALES */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
 body {
     font-family: 'Roboto', sans-serif; 
     font-weight: bolder;
+}
+
+main {
+    background-color: #ebebeb;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    font-size: 12px;
     background-color: #EAC926;
-    width: auto;
+}
+
+footer {
+    font-size: 12px;
+}
+
+nav {
+    display: none;
+}
+
+/** IMAGENES */
+
+.imagen-articulo {
+    width: 200px;
+    height: 200px;
+}
+
+.logo-principal{
+    width: 150px;
+    height: 100px;
+}
+
+/** TEXTOS */
+
+.titulo-principal {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+    display: none;
+}
+
+.contenido-footer {
+    text-align: center;
+}
+
+.caja-footer {
+    margin-bottom: 50px;
+}
+
+.texto {
+    text-align: center;
+}
+
+/** BOTONES */
+
+.burguer-menu {
+    text-align: center;
+    width: 28px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #1259C3;
+    color: white;
+}
+
+/** ÍCONOS */
+
+.icono-footer {
+    font-size: 2em;
+    color: #1259C3;
+}
+
+.fa-truck {
+    color: #39b54a;
+}
+
+/** CONTENEDORES */
+
+.caja-informacion {
+    background-color: white;
+    border: solid #ebebeb 1px;
+    padding: 15px;
+}
+
+.articulo {
+    margin-bottom: 10px;
+}
+
+/** MEDIA QUERIES */
+
+/* TABLETS */
+@media (min-width: 361px){
+    .descripcion {
+        display: block;
+    }
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    nav {
+        display: block;
+    }
+    .burguer-menu {
+        display: none;
+    }
+}
+
+/* PC */
+@media (min-width: 769px){
+    
+}
+
+/*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 section {
     margin: 10px;
-}
 
-header {
-    background-color: #EAC926;
 }
 
 main {
     background-color: #EAC926;
-    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-}
-
 li {
     font-size: 12px;
-}
-
-#descuento {
-    font-size: 16px;
-}
-
-#precio {
-    font-size: 18px;
 }
 
 h2 {
@@ -44,28 +171,10 @@ p {
     font-size: 14px;
 }
 
-.burguer-menu {
-    text-align: center;
-    font-size: 24px;
-    width: 28px;
-    padding: 8px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-color: #1259C3;
-    color: white;
-  }
-
 footer {
     background-color: white;
     padding-top: 20px;
     text-align: center;
-}
-
-#icono-footer {
-    size: 2em;
-    margin-bottom: 10px;
-    color: #1259C3;
-    font-size: 30px;
 }
 
 #copy {
@@ -78,20 +187,17 @@ footer {
     padding: 15px;
 }
 
-@media (max-width: 361px){
-    h2 {
-        display: none;
-    }
-    nav {
-        display: none;
-    }
+#precio-descuento {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: auto;
 }
 
-@media (min-width: 769px){
-    #cajaInfo {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .burguer-menu {
-        display: none;
+@media (min-width: 362px) and (max-width: 768px) {
+    #articulos {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
+}*/
