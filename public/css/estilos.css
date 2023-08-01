@@ -48,8 +48,8 @@ nav {
 }
 
 .logo-principal{
-    width: 150px;
-    height: 100px;
+    display: inline;
+    width: 50%;
 }
 
 /** TEXTOS */
@@ -109,6 +109,13 @@ nav {
 
 /** CONTENEDORES */
 
+.search-bar {
+    display: inline;
+    width: 50%;
+    height: 50%;
+    align-items: flex-start;
+}
+
 .caja-informacion {
     background-color: white;
     border: solid #ebebeb 1px;
@@ -117,6 +124,11 @@ nav {
 
 .articulo {
     margin-bottom: 10px;
+}
+
+.articulos {
+    display: flex;
+    flex-direction: column;
 }
 
 /** MEDIA QUERIES */
@@ -139,65 +151,8 @@ nav {
 
 /* PC */
 @media (min-width: 769px){
-    
-}
-
-/*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-section {
-    margin: 10px;
-
-}
-
-main {
-    background-color: #EAC926;
-    margin: 0 auto;
-    text-align: center;
-}
-
-li {
-    font-size: 12px;
-}
-
-h2 {
-    font-size: 16px;
-}
-
-p {
-    font-size: 14px;
-}
-
-footer {
-    background-color: white;
-    padding-top: 20px;
-    text-align: center;
-}
-
-#copy {
-    text-align: left;
-    color: #666;
-}
-
-#cajaInfo {
-    border: solid 1px #ebebeb;
-    padding: 15px;
-}
-
-#precio-descuento {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin: auto;
-}
-
-@media (min-width: 362px) and (max-width: 768px) {
-    #articulos {
-        display: flex;
-        flex-wrap: wrap;
+    .articulos {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
-}*/
