@@ -1,97 +1,158 @@
+/*  
+    PALETA DE COLORES
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+*/
+
+/** ESTILOS GLOBALES */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
 body {
     font-family: 'Roboto', sans-serif; 
     font-weight: bolder;
-    background-color: #EAC926;
-    width: auto;
-}
-
-section {
-    margin: 10px;
-}
-
-header {
-    background-color: #EAC926;
 }
 
 main {
-    background-color: #EAC926;
+    background-color: #ebebeb;
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
+header {
+    font-size: 12px;
+    background-color: #EAC926;
 }
 
-li {
+footer {
     font-size: 12px;
 }
 
-#descuento {
-    font-size: 16px;
+nav {
+    display: none;
 }
 
-#precio {
+/** IMAGENES */
+
+.imagen-articulo {
+    width: 200px;
+    height: 200px;
+}
+
+.logo-principal{
+    display: inline;
+    width: 50%;
+}
+
+/** TEXTOS */
+
+.titulo-principal {
+    font-size: 24px;
+}
+
+.precio {
     font-size: 18px;
 }
 
-h2 {
+.descuento {
     font-size: 16px;
+    color: #39b54a;
 }
 
-p {
-    font-size: 14px;
+.descripcion {
+    font-size: 16px;
+    display: none;
 }
+
+.contenido-footer {
+    text-align: center;
+}
+
+.caja-footer {
+    margin-bottom: 50px;
+}
+
+.texto {
+    text-align: center;
+}
+
+/** BOTONES */
 
 .burguer-menu {
     text-align: center;
-    font-size: 24px;
     width: 28px;
     padding: 8px;
     margin: 0 auto;
     border-radius: 5px;
     background-color: #1259C3;
     color: white;
-  }
-
-footer {
-    background-color: white;
-    padding-top: 20px;
-    text-align: center;
 }
 
-#icono-footer {
-    size: 2em;
-    margin-bottom: 10px;
+/** ÍCONOS */
+
+.icono-footer {
+    font-size: 2em;
     color: #1259C3;
-    font-size: 30px;
 }
 
-#copy {
-    text-align: left;
-    color: #666;
+.fa-truck {
+    color: #39b54a;
 }
 
-#cajaInfo {
-    border: solid 1px #ebebeb;
+/** CONTENEDORES */
+
+.search-bar {
+    display: inline;
+    width: 50%;
+    height: 50%;
+    align-items: flex-start;
+}
+
+.caja-informacion {
+    background-color: white;
+    border: solid #ebebeb 1px;
     padding: 15px;
 }
 
-@media (max-width: 361px){
-    h2 {
-        display: none;
+.articulo {
+    margin-bottom: 10px;
+}
+
+.articulos {
+    display: flex;
+    flex-direction: column;
+}
+
+/** MEDIA QUERIES */
+
+/* TABLETS */
+@media (min-width: 361px){
+    .descripcion {
+        display: block;
+    }
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     nav {
+        display: block;
+    }
+    .burguer-menu {
         display: none;
     }
 }
 
+/* PC */
 @media (min-width: 769px){
-    #cajaInfo {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .burguer-menu {
-        display: none;
+    .articulos {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
