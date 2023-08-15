@@ -72,6 +72,10 @@ nav {
     display: none;
 }
 
+.caja-informacion:hover .descripcion{
+    display: block;
+}
+
 .contenido-footer {
     text-align: center;
 }
@@ -136,9 +140,12 @@ nav {
 /* TABLETS */
 @media (min-width: 361px){
     .descripcion {
-        display: block;
+        display: none;
     }
     .articulo{
+        transition-property: all;
+    }
+    .articulo:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     nav {

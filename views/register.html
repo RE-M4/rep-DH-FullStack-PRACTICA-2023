@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <!--Import de fuentes (Google Fonts)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--Import de íconos (FontAwesome)-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+        <input type="date"><br>
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio"><br>
+        <label for="tipo-usuario">Tipo de usuario</label>
+        <select name="tipo-usuario" id="tipo-usuario">
+            <option value="comprador">Comprar</option>
+            <option value="vendedor">Vender</option>
+        </select><br>
+        <label for="categoria">Categorías de interés</label>
+        <span><input type="checkbox" name="categoria" value="Electro">Electro</span>
+        <span><input type="checkbox" name="categoria" value="Moda">Moda</span>
+        <span><input type="checkbox" name="categoria" value="Hogar">Hogar</span>
+        <span><input type="checkbox" name="categoria" value="Juguetería">Juguetería</span>
+        <span><input type="checkbox" name="categoria" value="Vida sana">Vida sana</span><br>
+        <label for="foto-perfil">Seleccionar foto de perfil:</label>
+        <input type="file" name="foto-perfil"><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" id="contrasena"><br>
+        <label for="contrasena">Confirmar contraseña:</label>
+        <input type="password" name="contrasena" id="contrasena"><br>
+        <button type="submit">ENVIAR</button>
+        <button type="reset">LIMPIAR</button>
+    </form>
+</body>
+</html>
