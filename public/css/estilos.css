@@ -18,6 +18,7 @@
 body {
     font-family: 'Roboto', sans-serif; 
     font-weight: bolder;
+    background-color: #ebebeb;
 }
 
 main {
@@ -30,10 +31,14 @@ main {
 header {
     font-size: 12px;
     background-color: #EAC926;
+    padding-bottom: 2%;
 }
 
 footer {
     font-size: 12px;
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 1%;
 }
 
 nav {
@@ -48,8 +53,7 @@ nav {
 }
 
 .logo-principal{
-    display: inline;
-    width: 50%;
+    width: 33%;
 }
 
 /** TEXTOS */
@@ -78,6 +82,9 @@ nav {
 
 .contenido-footer {
     text-align: center;
+    display: flex;
+    width: 95%;
+    margin: auto;
 }
 
 .caja-footer {
@@ -85,7 +92,10 @@ nav {
 }
 
 .texto {
-    text-align: center;
+    display: flex;
+    align-self: center;
+    width: 34%;
+    justify-content: center;
 }
 
 /** BOTONES */
@@ -111,13 +121,21 @@ nav {
     color: #39b54a;
 }
 
+.caja-footer i:hover {
+    color: #EAC926;
+}
+
 /** CONTENEDORES */
 
+.copyright {
+    margin-left: 3%;
+}
+
 .search-bar {
-    display: inline;
-    width: 50%;
-    height: 50%;
-    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 33%;
 }
 
 .caja-informacion {
@@ -133,6 +151,97 @@ nav {
 .articulos {
     display: flex;
     flex-direction: column;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-subcontainer {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.navbar-subcontainer a {
+    margin-left: 3%;
+    margin-right: 3%;
+    text-decoration: none;
+    color: black;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/** FORMULARIO LOGIN */
+.formulario {
+    display: flex;
+    background-color: #ebebeb;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.formulario input {
+    width: 40%;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 5%;
+    border: none;
+}
+
+.formulario button {
+    width: 40%;
+}
+
+.boton-ingresar {
+    border: 1px black solid;
+    background-color: white;
+    color: black;
+    padding: 1%;
+} 
+
+.boton-ingresar:hover {
+    background-color:  #0022AA;
+    color: white;
+}
+
+/** FORMULARIO REGISTRO */
+
+.formulario-registro {
+    display: flex;
+    width: 35%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.formulario-registro input {
+    width: 100%;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 5%;
+    border: none;
+}
+
+.formulario-registro label {
+    margin-bottom: 1%;
+    align-self: flex-start;
+}
+
+.formulario-registro span {
+    display: flex;
 }
 
 /** MEDIA QUERIES */
